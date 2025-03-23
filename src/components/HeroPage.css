@@ -1,0 +1,195 @@
+/* HeroPage.css */
+
+
+.hero-container {
+    display: grid;
+    grid-template-rows: 50vh 50vh;
+    gap: 1rem;
+    padding: 2rem;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+  }
+  
+  /* First Section (Header with Slogan and Image) */
+  .hero-header {
+    background-image: url("../assets/yogaback.jpg");
+    /* opacity: 90%; */
+    background-size: cover;
+    background-position: end;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 16px;
+    padding: 2rem;
+    background-color: #ccd5ae;
+    height: 100%;
+  }
+  
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+  }
+  .hero-title {
+    font-size: 3rem;
+    color: #3c3e34;
+  }
+  .hero-title strong{
+    font-size: 4rem;
+  }
+  .hero-title span{
+    font-size: 4.5rem;
+  }
+  .hero-title em{
+    font-size: 5rem;
+  }
+  
+  .slogan {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+  }
+  .start{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .start:hover{
+    color: #fff;
+    background-color: var(--primary-color);
+    border: 2px solid #fff;
+
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 16px;
+  }
+  
+ /* Hero Grid Layout */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 1rem;
+    grid-template-rows: 1fr;
+    height: 80%;
+    /* margin-top: 1rem;  */
+  }
+  
+  
+  .hero-grid-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    /* padding: 1rem; */
+    border-radius: 16px;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .grid-image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 16px;
+    position: absolute;
+    opacity: 90%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Push the image behind the text */
+  }
+  
+
+  .cta-button1{
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding: 6px;
+    border-radius: 10px;
+    color: #fff;
+    border: 2px solid #fff;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.6s ease-in;
+    /* background-color: var(--accent-color); */
+  
+  }
+  .cta-button1:hover{
+    transform: scale(1.10);
+    background-color: var(--accent-color);
+  }
+
+
+  
+  .grid-header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    z-index: 1; /* Ensure text stays on top of the image */
+    color: #fff;
+    
+  }
+  
+
+
+  
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-container {
+      padding: 1rem;
+      grid-template-rows: auto;
+    }
+  
+    .hero-header {
+      grid-template-columns: 1fr;
+      height: auto;
+      /* height: 50%; */
+    }
+
+  
+    .hero-grid {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+  
+    .hero-grid-item {
+      padding: 6rem;
+    }
+    .email-container {
+        flex-direction: column; /* Stack the email and button vertically on smaller screens */
+        gap: 1rem; /* Space between the email input and button */
+      }
+    
+      .email-input {
+        width: 100%; /* Take full width on small screens */
+      }
+    
+      .get-started-button {
+        width: 100%; /* Button takes full width on small screens */
+      }
+  }
+  
+  @media (max-width: 450px) {
+    .hero-container{
+      margin-bottom: 54rem;
+    }
+  }

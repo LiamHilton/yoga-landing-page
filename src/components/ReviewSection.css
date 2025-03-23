@@ -1,0 +1,84 @@
+.review-section {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  
+  .review-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .review-card {
+    /* background: white; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    /* border: 2px solid var(--secondary-color); */
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+  }
+  
+  .review-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .stars {
+    color: #D4A373;
+    font-size: 18px;
+  }
+  
+  .review-text {
+    font-size: 16px;
+    color: var(--secondary-color);
+  }
+  
+  /* Toggle Dots */
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: #D4A373;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .dot:hover {
+    transform: scale(1.2);
+  }
+  
+  .dot.active {
+    background: #B68452;
+    transform: scale(1.3);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .review-container {
+      grid-template-columns: 1fr; /* Stack reviews on mobile */
+    }
+  }
+  

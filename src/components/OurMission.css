@@ -1,0 +1,88 @@
+/* Header Section */
+.page-header {
+  background-color: var(--highlight-color);
+  color:#283618;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+/* Cards Section */
+.our-mission-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
+  /* margin-top: 20px; */
+  background-color: var(--highlight-color);
+}
+
+.card {
+  background-color: #e9edc9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #283618;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* img{
+  display: none;
+} */
+
+/* Responsiveness for Mobile and Tablets */
+@media (max-width: 768px) {
+
+  /* img{
+    display: flex;
+    justify-content: center;
+    height: 320px;
+    width: 320px;
+  } */
+  .page-header{
+    margin-top: 20rem;
+  }
+  .our-mission-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .our-mission-cards {
+    grid-template-columns: 1fr;
+  }
+  /* .page-header{
+  } */
+}

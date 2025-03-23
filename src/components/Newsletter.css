@@ -1,0 +1,105 @@
+.newsletter-container {
+    background-image: url(../assets/image-1.jpg); /* Ensure correct path */
+    background-size: cover;
+    margin: 2rem;
+    background-position: center;
+    height: 60vh; /* Ensures the section fills the screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 1rem;
+  }
+  
+  .newsletter-content {
+    text-align: flex-start;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    padding: 50px 100px;
+    border-radius: 10px;
+    max-width: 900px;
+    height: 300px;
+  }
+  
+  .newsletter-header {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .newsletter-paragraph {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .newsletter-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 10px;
+  }
+  
+  .newsletter-button {
+    padding: 10px 20px;
+    background-color: #283618; /* Your primary color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter-button:hover {
+    background-color: #D4A373; /* Lighter hover color */
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter-container {
+      
+      height: 50vh; /* Ensures the section fills the screen height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-radius: 1rem;
+    }
+    .newsletter-content {
+      padding: 40px;
+      margin: 2rem;
+    }
+  
+    .newsletter-header {
+      font-size: 1.8rem;
+    }
+  
+    .newsletter-paragraph {
+      font-size: 0.9rem;
+    }
+  
+    .newsletter-input {
+      width: 60%;
+    }
+  }
+  @media (max-width: 450px) {
+    .newsletter-container {
+      
+      height: 60vh; /* Ensures the section fills the screen height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+      border-radius: 1rem;
+    }
+    .newsletter-content {
+      padding: 40px;
+      margin: 1rem;
+     
+    }
+  }

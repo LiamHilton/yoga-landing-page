@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --primary-color: #283618; /* Dark green */
+  --secondary-color: #CCD5AE; /* Light green */
+  --accent-color: #D4A373; /* Soft orange */
+  --highlight-color: #FAEDCD; /* Light cream */
+  --background-color: #E9EDC9; /* Light background */
+}
