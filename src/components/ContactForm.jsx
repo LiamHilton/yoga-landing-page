@@ -11,9 +11,9 @@ const ContactForm = () => {
 
 
   const onSubmit = (data) => {
-    const serviceID = "service_so2nd6q"; 
-    const templateID = "template_drtkhz4"; 
-    const publicKey = "UJo7S4_yYQom0gxLd"; 
+    const serviceID = "****"; 
+    const templateID = ""; 
+    const publicKey = "";
 
   const emailData = {
       name: data.name,
